@@ -1,2 +1,2 @@
 # loopback-example-remote
-Example of LoopBack remote connector
+**NOTE: This example is not yet finished!  Please check back later.**
