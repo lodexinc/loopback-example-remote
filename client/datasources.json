@@ -4,8 +4,8 @@
     "connector": "memory"
   },
   "remoteDS": {
+    "url": "http://0.0.0.0:3001/api",
     "name": "remoteDS",
-    "connector": "remote",
-    "url": "http://0.0.0.0:3001/api"
+    "connector": "remote"
   }
 }
