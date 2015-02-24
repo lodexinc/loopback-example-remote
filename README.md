@@ -13,7 +13,9 @@ one model: `Person`, with a single property, `name`.
 * `examples`: Contains examples of using the Node SDK in `client` to connect to the server API.
  * `create.js`: A simple example script that creates a new Person record (instance).
 
-## How to run the example
+## How to run the examples
+
+**Starting the Server**
 
 Initially, you need to run `npm install` to install all the dependencies for both client and server.   
 Then, start the server application.
@@ -26,7 +28,9 @@ $ npm install
 $ slc run 
 ```
 
-Now in another shell, run the example that uses the client "SDK."
+**Basic CRUD Example**
+
+Now in another shell, run an example that uses the client "SDK."
 
 ```
 $ node examples/create.js
@@ -48,4 +52,27 @@ In **Response Body**, you will see the record that `create.js` created via the N
     "id": 1
   }
 ]
+```
+
+**Auth Example**
+
+This example demonstrates the following basic tasks (using the remote connector):
+
+ - registering a user 
+ - logging in as a user
+ - defining a custom remote method
+ - securing access to custom methods
+
+After running the server, you can run the `examples/auth.js` example in a 
+separate shell.
+
+```
+$ node examples/auth.js
+Got error (Authorization Required) when trying to call method without auth
+Registered a user
+Logged in as foo@bar.com
+Set access token for all future requests. (MGd...JMA==)
+Called a custom method (myMethod) as a logged in user
+Logged out and unset the acces token for future invocations
+Got error (Authorization Required) when trying to call method without auth
 ```
