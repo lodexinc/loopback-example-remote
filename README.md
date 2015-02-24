@@ -5,6 +5,7 @@ This is a very simple example of using the LoopBack [remote connector](http://do
 ## Overview
 
 The example has the following structure:
+
 - `server`: A LoopBack application that connects to a backend data source (just the in-memory data source here) and provides a CRUD API (both Node and REST) to interact with the data source.  
 - `client`: A Node application that connects to the LoopBack server application using the [remote connector](https://github.com/strongloop/loopback-connector-remote).  This acts as a very simple Node client SDK for LoopBack.
 - `common/models`: Model definitions shared between client and server applications.  Using a shared model definition ensures that client and server expect the same model structures.  This simple example defines only
