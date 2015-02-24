@@ -34,8 +34,7 @@ Created Person...
 { name: 'Fred', id: 1 }
 ```
 
-Now open LoopBack Explorer at http://0.0.0.0:3001/explorer/.  
-This provides a view into the server application REST API. 
+Now open LoopBack Explorer at http://0.0.0.0:3001/explorer/.  This provides a view into the server application REST API. 
 
 Go to http://0.0.0.0:3001/explorer/#!/People/find to expand the `GET /People` operation.
 Then click **Try it!**.
