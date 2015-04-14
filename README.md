@@ -25,7 +25,7 @@ $ cd client
 $ npm install
 $ cd ../server
 $ npm install
-$ slc run 
+$ node . 
 ```
 
 **Basic CRUD Example**
